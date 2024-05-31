@@ -1,0 +1,273 @@
+<html lang="ko">
+<head>
+    <script src="/js/include.js"></script>
+    <script>include.meta();</script>
+    <title>TEAM STUDIOS - MY PAGE</title>
+    <script>include.styles();</script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- skip nav -->
+        <script>include.skipNav();</script>
+        <!-- header 영역 -->
+        <script>include.header();</script>
+        <div class="content-wrap">
+            <!-- content 영역 -->
+            <div class="content">
+                <div class="inner-wrap">
+                    <div class="path-wrap">
+                        <a href="/index.html">HOME</a>
+                        <a href="/html/mypage/mypage.html">MY PAGE</a>
+                        <a href="#none" class="active">내 견적</a>
+                    </div>
+                   
+                    <div class="section-wrap">
+                        <div class="flx justi-between align-center">
+                            <div class="tit-wrap">
+                                <h3>내 견적 진행상황</h3>
+                                <a href="#none" class="tip-btn pop-open" data-open="popup01"><span class="a11y">진행별 세부설명보기</span></a>
+                            </div>
+                            <div class="select-wrap">
+                                <section class="selectbox">
+                                    <button type="button" class="toggle-btn">
+                                        진행상황
+                                    </button>
+                                    <ul class="selectbox-option">
+                                        <li><button type="button" class="option-btn">전체보기</button></li>
+                                        <li><button type="button" class="option-btn">신청완료</button></li>
+                                        <li><button type="button" class="option-btn">견적협의</button></li>
+                                        <li><button type="button" class="option-btn">견적확정</button></li>
+                                        <li><button type="button" class="option-btn">계약체결</button></li>
+                                        <li><button type="button" class="option-btn">행사종료</button></li>
+                                        <li><button type="button" class="option-btn">일시중단</button></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="table-list-wrap table-slide">
+                            <table>
+                                <caption>내 견적 진행상황 (프로젝트명, 가견적, 확정견적, 행사일정, 진행상황)을 표기하는 테이블입니다.</caption>
+                                <colgroup>
+                                    <col width="5%">
+                                    <col width="25%">
+                                    <col width="18%">
+                                    <col width="18%">
+                                    <col width="auto">
+                                    <col width="13%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>프로젝트명</th>
+                                        <th>가견적</th>
+                                        <th>확정견적</th>
+                                        <th>행사일정</th>
+                                        <th>진행상황</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-c">1</td>
+                                        <td><p class="ellipsis"><a href="#none" class="pop-open" data-open="popup02">팀스튜디오 견적 테스터 입니다. 팀스튜디오 견적 테스터 입니다.</a></p></td>
+                                        <td class="align-c"><p>200,000,000원</p></td>
+                                        <td class="align-c"><p>200,000,000원</p></td>
+                                        <td class="align-c">
+                                            <span class="st">2022.10.25</span>
+                                            <span class="ed">2022.10.31</span>
+                                        </td>
+                                        <td class="align-c">
+                                            <span class="state">신청완료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-c">2</td>
+                                        <td><p class="ellipsis"><a href="#none">팀스튜디오 견적 테스터 입니다. 팀스튜디오 견적 테스터 입니다.</a></p></td>
+                                        <td class="align-c"><p>200,000,000원</p></td>
+                                        <td class="align-c"><p>200,000,000원</p></td>
+                                        <td class="align-c">
+                                            <span class="st">2022.10.25</span>
+                                            <span class="ed">2022.10.31</span>
+                                        </td>
+                                        <td class="align-c">
+                                            <span class="state">신청완료</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 진행중인 견적이 없을경우 -->
+                        <!-- <div class="table-list-wrap no-data">
+                            <i class="ico-warning"></i>
+                            <p>현재 진행중인 견적이 없습니다.</p>
+                        </div> -->
+                        <!-- //진행중인 견적이 없을경우 -->
+                        
+                        <!-- pagination -->
+                        <!-- <ul class="pagination-wrap">
+                            <li><a href="#none" class="first"><span class="a11y">처음페이지</span></a></li>
+                            <li><a href="#none" class="prev"><span class="a11y">이전페이지</span></a></li>
+                            <li><a href="#none" class="active">1</a></li>
+                            <li><a href="#none">2</a></li>
+                            <li><a href="#none">3</a></li>
+                            <li><a href="#none">4</a></li>
+                            <li><a href="#none">5</a></li>
+                            <li><a href="#none" class="next"><span class="a11y">마지막페이지</span></a></li>
+                            <li><a href="#none" class="last"><span class="a11y">다음페이지</span></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popup area -->
+        <!-- layer pop basicsize -->
+        <div class="layer-pop" id="popup01">
+            <div class="pop-wrapper">
+                <div class="pop-tit">
+                    <h2>진행상황별 세부설명</h2>
+                </div>
+                <div class="pop-content">
+                    <ul class="accordion-wrapper">
+                        <li class="item">                           
+                            <a href="#none" class="accord-tit">
+                                <span class="ico"><img src="/img/img_estimate01.png" alt=""></span>
+                                <h2>신청완료</h2>
+                                <i class="accord-icon"><img src="/img/arrow_down.png" alt=""></i>
+                            </a>
+                            <div class="accord-cont">
+                                담당자가 신청해주신 프로젝트를 확인한 후 남겨주신 연락처로 연락드릴 예정입니다
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="#none" class="accord-tit">
+                                <span class="ico"><img src="/img/img_estimate02.png" alt=""></span>
+                                <h2>견적협의</h2>
+                                <i class="accord-icon"><img src="/img/arrow_down.png" alt=""></i>
+                            </a>
+                            <div class="accord-cont">
+                                프로젝트 세부사항을 확인하며 최종 견적을 협의중인 상태입니다.
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="#none" class="accord-tit">
+                                <span class="ico"><img src="/img/img_estimate03.png" alt=""></span>
+                                <h2>견적확정</h2>
+                                <i class="accord-icon"><img src="/img/arrow_down.png" alt=""></i>
+                            </a>
+                            <div class="accord-cont">
+                               프로젝트의 최종 견적이 확정되었습니다.
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="#none" class="accord-tit">
+                                <span class="ico"><img src="/img/img_estimate04.png" alt=""></span>
+                                <h2>계약체결</h2>
+                                <i class="accord-icon"><img src="/img/arrow_down.png" alt=""></i>
+                            </a>
+                            <div class="accord-cont">
+                               프로젝트의 계약 체결이 완료되었습니다
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="#none" class="accord-tit">
+                                <span class="ico"><img src="/img/img_estimate05.png" alt=""></span>
+                                <h2>행사종료</h2>
+                                <i class="accord-icon"><img src="/img/arrow_down.png" alt=""></i>
+                            </a>
+                            <div class="accord-cont">
+                               프로젝트가 완료되었습니다. (대금 지급 완료 후 해당 상태로 변경됩니다.)
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="#none" class="accord-tit">
+                                <span class="ico"><img src="/img/img_estimate06.png" alt=""></span>
+                                <h2>일시중단</h2>
+                                <i class="accord-icon"><img src="/img/arrow_down.png" alt=""></i>
+                            </a>
+                            <div class="accord-cont">
+                               본 프로젝트는 고객의 사정으로 일시 중단되었습니다.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#none" class="close-btn"><span class="a11y">팝업창 닫기</span></a>
+            </div>
+        </div>
+        <!-- layer pop fullsize -->
+        <div class="layer-pop" id="popup02">
+            <div class="pop-wrapper">
+                <div class="pop-tit">
+                    <h2>팀스튜디오 견적 TEST</h2>
+                </div>
+                <div class="pop-content">
+                    <div class="tit-wrap">
+                        <h4>내 프로젝트 진행현황</h4>
+                    </div>
+                    <ul class="progress-status">
+                        <li class="active">
+                            <p>신청완료</p>      
+                        </li>
+                        <li>
+                            <p>견적협의</p>      
+                        </li>
+                        <li>
+                            <p>견적확정</p>      
+                        </li>
+                        <li>
+                            <p>계약체결</p>      
+                        </li>
+                        <li>
+                            <p>행사종료</p>      
+                        </li>
+                        <li>
+                            <p>일시중단</p>      
+                        </li>
+                    </ul>
+                    <div class="estimate-list">
+                        <dl class="application-date">
+                            <dt>신청일자</dt>
+                            <dd><p class="flx justi-between align-base gap2"><span>2022. 10. 28</span><span>05:21</span></p></dd>
+                        </dl>
+                        <dl class="temporary-price">
+                            <dt>가견적가</dt>
+                            <dd><p class="flx justi-between align-base gap2"><span>20,000,000</span>원</p></dd>
+                        </dl>
+                        <dl class="confirm-price">
+                            <dt>확정금액</dt>
+                            <dd><p class="flx justi-between align-base gap2"><span class="point">27,000,000</span>원</p></dd>
+                        </dl>
+                        <dl class="event-day">
+                            <dt>행사일정</dt>
+                            <dd>
+                                <p class="s-date flx justi-between align-base gap2">시작일<span>2022.11. 11</span><span>10:00</span></p>
+                                <p class="e-date flx justi-between align-base gap2">종료일<span>2022.11. 12</span><span>18:00</span></p>
+                            </dd>
+                        </dl>
+                        <dl class="contract">
+                            <dt>계약현황</dt>
+                            <dd>계약전</dd>
+                        </dl>
+                        <dl class="payment">
+                            <dt>대금결제</dt>
+                            <dd>
+                                <p class="deposit flx justi-between align-base gap2">선금 
+                                    <span>7,000</span>원
+                                    <em class="badge-bk">입금완료</em>
+                                </p>
+                                <p class="rest flx justi-between align-base gap2">잔금 
+                                    <span>20,000,000</span>원
+                                    <em class="badge-gr">입금전</em>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <a href="#none" class="close-btn"><span class="a11y">팝업창 닫기</span></a>
+            </div>
+        </div>
+        <!-- footer area -->
+        <script>include.footer();</script>
+    </div>
+    <script>include.scripts();</script>
+</body>
+</html>
